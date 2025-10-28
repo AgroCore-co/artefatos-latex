@@ -72,20 +72,35 @@ De acordo com o avanço do projeto, o diagrama Classe pode ser alterado.
 
 De acordo com o avanço do projeto, o diagrama de O  bjeto pode ser alterado.
 \newpage
-\section*{Modelagens do Banco de dados}
-Nesta seção serão apresentados o diagrama utilizados para a modelagem do banco de dados não relacional do sistema desenvolvido. O diagrama utilizado, pode-se citar: Diagrama de Estrutura de Coleções e Diagrama de Relacionamentos entre Documentos. 
-
-\subsection*{Modelo Banco de dados}
- \addcontentsline{toc}{section}{Modelo Banco de dados}
+\section*{Modelo Conceitual Banco de dados}
+Nesta seção é apresentado o modelo conceitual do banco de dados, desenvolvido com base na identificação das entidades, relacionamentos e cardinalidades. Esse modelo tem como objetivo representar, de forma abstrata e independente de implementação, a estrutura geral das informações que compõem o sistema.
+\subsection*{Modelo Conceitual Banco de dados}
+ \addcontentsline{toc}{section}{Modelo Conceitual Banco de dados}
 
      \begin{figure}[h]
 \centering
 \caption{Modelo Banco de dados}%
 \label{fig:modelo-conceitual}
-\includegraphics[width=1.1\textwidth]{Logos/bancoBuffs.png}
+\includegraphics[width=1.1\textwidth]{Logos/Conceitual_buffs.png}
 \SourceOrNote{Propria Autoria (2025)}
 \end{figure}
 De acordo com o avanço do projeto, o Modelo Banco de dados pode ser alterado.
+
+\newpage
+\section*{Modelo Lógico Banco de dados}
+A seguir, é apresentado o modelo lógico do banco de dados, derivado do modelo conceitual. Nessa etapa, as entidades e relacionamentos são refinados em tabelas, chaves primárias e estrangeiras, garantindo a integridade referencial e a coerência dos dados conforme as regras de negócio do sistema.
+\subsection*{Modelo Lógico Banco de dados}
+ \addcontentsline{toc}{section}{Modelo Lógico Banco de dados}
+
+     \begin{figure}[h]
+\centering
+\caption{Modelo Banco de dados}%
+\label{fig:modelo-conceitual}
+\includegraphics[width=1.1\textwidth]{Logos/Lógico_Buffs.png}
+\SourceOrNote{Propria Autoria (2025)}
+\end{figure}
+De acordo com o avanço do projeto, o Modelo Banco de dados pode ser alterado.
+
 
 \newpage
 \section*{Desenvolvimento do Canvas}
@@ -100,26 +115,13 @@ Nesta seção será apresentado o Canvas utilizado para a modelagem do sistema d
 \end{figure}
 
 \newpage
-\section*{Desenvolvimento do Kanban}
-Nesta seção será apresentado o quadro Kanban utilizado para a organização e acompanhamento das tarefas do sistema desenvolvido. O Kanban é estruturado em colunas que representam os estágios do fluxo de trabalho, como A Fazer, Parado, Em Andamento e Concluído, permitindo uma visualização clara do progresso e dos gargalos das atividades.
- \addcontentsline{toc}{section}{Kanban}
-     \begin{figure}[h]
-\centering
-\caption{Kanban}%
-\label{fig:kanban}
-\includegraphics[width=0.9\textwidth]{Logos/Kanban.png}
-\SourceOrNote{Propria Autoria (2025)}
-\end{figure}
-
-\newpage
 \section*{Diagrama e Especificação da Infraestrutura da Rede}
-Nesta seção serão apresentados a diagramação e a especificação da estrutura de redes do sistema desenvolvido. Serão detalhados os componentes da rede, como servidores, dispositivos de armazenamento, switches, roteadores e conexões, bem como os protocolos utilizados e a disposição lógica e física da infraestrutura. 
-\addcontentsline{toc}{section}{Rede}
+Nesta seção é apresentada a arquitetura de rede e hospedagem do sistema desenvolvido. O ambiente foi estruturado de forma distribuída em serviços de nuvem, a fim de garantir escalabilidade, desempenho e disponibilidade. A API e o módulo de Inteligência Artificial foram hospedados em uma instância EC2 da AWS, responsável pelo processamento e integração com os demais componentes. O front-end web foi implantado na plataforma Vercel, permitindo a publicação e entrega contínua da interface do usuário. Já o banco de dados relacional PostgreSQL está hospedado no Supabase, que oferece gerenciamento, autenticação e acesso seguro aos dados do sistema.\addcontentsline{toc}{section}{Rede}
      \begin{figure}[h]
 \centering
 \caption{Rede}%
 \label{fig:rede}
-\includegraphics[width=0.7\textwidth]{Logos/Redes.png}
+\includegraphics[width=0.9\textwidth]{Logos/buffs-arch-model.png}
 \SourceOrNote{Propria Autoria (2025)}
 \end{figure}
 
